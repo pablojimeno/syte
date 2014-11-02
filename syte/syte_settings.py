@@ -5,9 +5,9 @@ COMPRESS_REVISION_NUMBER = '1.0'
 BLOG_PLATFORM = 'tumblr'  # Wordpress or tumblr
 
 #Blog Integration: Tumblr
-TUMBLR_BLOG_URL = '[ENTER TUMBLR BLOG URL] ex. rigoneri.tumblr.com'
+TUMBLR_BLOG_URL = 'pablojimeno.tumblr.com'
 TUMBLR_API_URL = 'http://api.tumblr.com/v2/blog/{0}'.format(TUMBLR_BLOG_URL)
-TUMBLR_API_KEY = '[ENTER TUMBLR API KEY HERE, SEE TUMBLR SETUP INSTRUCTIONS]'
+TUMBLR_API_KEY = 'aMuShe2lHZ8L08T9fuY79kAu2rgWPSyZbCZcNqLNIhTQclS7F4'
 
 #Blog Integration: Wordpress
 WORDPRESS_BLOG_URL = '[ENTER WORDPRESS BLOG URL] ex. gordonkoo.wordpress.com'
@@ -15,7 +15,7 @@ WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/{0}'.format(
 
 #RSS Feed Integration: (by default use Tumblr rss feed)
 RSS_FEED_ENABLED = True
-RSS_FEED_URL = 'http://{0}/rss'.format(TUMBLR_BLOG_URL)
+RSS_FEED_URL = 'http://blog.pablojimeno.com/atom.xml'
 
 #Twitter Integration
 TWITTER_INTEGRATION_ENABLED = True
