@@ -12,7 +12,7 @@ function renderBlogPosts(posts) {
   //Update this every time there are changes to the required 
   //templates since it's cached every time
   require.config({
-    urlArgs: "bust=v1" 
+    urlArgs: "bust=v2" 
   })
 
   require(["text!templates/blog-post-text.html",
@@ -108,10 +108,10 @@ function fetchWordpressBlogPosts(offset, tag) {
         // TODO: figure out how to preserve timezone info and make it consistent with
         // python's datetime.strptime
         if (p.date.lastIndexOf('+') > 0) {
-          p.date = p.date.substring(0, p.date.indexOf('+'));
+          p.date = p.date.substring(0, p.date.lastIndexOf('+'));
         }
         else {
-          p.date = p.date.substring(0, p.date.indexOf('-'));
+          p.date = p.date.substring(0, p.date.lastIndexOf('-'));
         }
     });
     renderBlogPosts(data.posts);
